@@ -1,0 +1,14 @@
+package week2_bai5;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Main {
+	public static void main(String[] args) {
+
+		HangThucPham hang1 = new HangThucPham("001","Gao", 1543534,new LocalDateTime("10/07/2018"), new LocalDateTime("10/07/2018"),"Hang het han");
+		
+		System.out.println(hang1);
+	}
+
+}

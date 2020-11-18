@@ -1,0 +1,23 @@
+package week1;
+
+public class Bai6 {
+	public static void main(String[] args) {
+		int result = 1 + 2;
+		result = result - 1;
+		result = result * 2;
+		result = result /2;
+		result = result + 8 ;
+		result = result % 7;
+		String firstString = "This is ";
+		String secondString = " a concatenated string";
+		String thirdString = firstString + secondString;
+		System.out.print("final result: " + result+"\n");
+		System.out.println(thirdString);
+		
+		int res = + 1;
+		
+		print(res)
+		
+	}
+
+}

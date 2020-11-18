@@ -1,0 +1,20 @@
+package week2_bai2;
+
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		
+		SinhVien sv1 = new SinhVien(1111," Nguyen thanh an", 6.5f, 8.5f);
+//		SinhVien sv2 = new SinhVien(2222,"Nguyen thi bong", 7.5f, 8.0f);
+		
+//		SinhVien sv3 = GetSinhVien();
+		System.out.println(sv1);
+		
+		
+	}
+	
+	
+}

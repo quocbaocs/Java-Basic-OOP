@@ -1,0 +1,10 @@
+package week2_bai6;
+
+public class Account {
+	private long accountNumber;
+	private String name;
+	private double balance ;
+	final double RATE=0.035;
+	
+	
+}

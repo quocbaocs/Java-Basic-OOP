@@ -1,0 +1,57 @@
+package week2_bai3;
+
+public class HinhTamGiac {
+	private float ma, mb, mc;
+
+	public HinhTamGiac(float ma, float mb, float mc) {
+		super();
+		if (((ma + mb) > mc) || ((mb + mc) > ma) || ((ma + mc) > mb) ||((ma)>0) ||((ma)>0)||((ma)>0)) {
+			this.ma = ma;
+			this.mb = mb;
+			this.mc = mc;
+		} else {
+			this.ma = 0;
+			this.mb = 0;
+			this.mc = 0;
+		}
+
+	}
+
+	public HinhTamGiac() {
+		this(0, 0, 0);
+	}
+
+	public float getMa() {
+		return ma;
+	}
+
+	public void setMa(float ma) {
+		this.ma = ma;
+	}
+
+	public float getMb() {
+		return mb;
+	}
+
+	public void setMb(float mb) {
+		this.mb = mb;
+	}
+
+	public float getMc() {
+		return mc;
+	}
+
+	public void setMc(float mc) {
+		this.mc = mc;
+	}
+	
+	public String loaiTG() {
+		String thuong = ((ma==mb)&&ma==mc&&mb==mc)? "deu":"false";
+		String deu = ((ma==mb)||ma==mc||mb==mc)? "can":"false";
+		
+		if(thuong=="false") {
+			return "deu";
+		}
+		return "thuong";
+	}
+}

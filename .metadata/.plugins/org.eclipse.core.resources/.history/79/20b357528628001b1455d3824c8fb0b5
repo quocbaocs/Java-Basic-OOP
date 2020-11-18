@@ -1,0 +1,33 @@
+package week2_bai7;
+
+public class ToaDo {
+	private ToaDo tam;
+	private double banKinh;
+
+	public ToaDo(ToaDo tam, double banKinh) {
+		this.tam = tam;
+		this.banKinh = banKinh;
+	}
+
+	public ToaDo() {
+
+	}
+
+	public ToaDo getTam() {
+		return tam;
+	}
+
+	public void setTam(ToaDo tam) {
+		this.tam = tam;
+	}
+
+	public double getBanKinh() {
+		return banKinh;
+	}
+
+	public void setBanKinh(double banKinh) {
+		this.banKinh = banKinh;
+	}
+
+	
+}

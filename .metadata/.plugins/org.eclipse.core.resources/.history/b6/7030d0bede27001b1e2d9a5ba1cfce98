@@ -1,0 +1,13 @@
+package week2_bai5;
+
+import java.time.format.DateTimeFormatter;
+
+public class Main {
+	public static void main(String[] args) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		HangThucPham hang1 = new HangThucPham("001","Gao", 1543534,"10/07/2018".format(formatter), 10/07/2018".format(formatter),"Hang het han");
+		
+		System.out.println(hang1);
+	}
+
+}

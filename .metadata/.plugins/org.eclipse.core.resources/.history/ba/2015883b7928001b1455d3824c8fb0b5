@@ -1,0 +1,96 @@
+package week2_bai5;
+
+import java.text.DecimalFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+
+public class HangThucPham {
+	private String maHang;
+	private String tenHang;
+	private float donGia;
+	private LocalDate ngaySx, ngayHH;
+	private String ghiChu;
+
+	public HangThucPham(String maHang, String tenHang, float donGia, LocalDate ngaySx, LocalDate ngayHH,
+			String ghiChu) {
+		super();
+		this.maHang = maHang;
+		this.tenHang = tenHang;
+		this.donGia = donGia;
+		this.ngaySx = ngaySx;
+		this.ngayHH = ngayHH;
+		this.ghiChu = ghiChu;
+	}
+
+	public HangThucPham() {
+		super();
+	}
+
+	public String getMaHang() {
+		return maHang;
+	}
+
+	public void setMaHang(String maHang) throws Exception {
+		if (!maHang.trim().equals("")) {
+			this.maHang = maHang;
+		} else
+			throw new Exception("Loi: ma hang rong!");
+
+	}
+
+	public String getTenHang() {
+		return tenHang;
+	}
+
+	public void setTenHang(String tenHang) {
+		this.tenHang = tenHang;
+	}
+
+	public float getDonGia() {
+		return donGia;
+	}
+
+	public void setDonGia(float donGia) {
+		this.donGia = donGia;
+	}
+
+	public LocalDate getNgaySx() {
+		return ngaySx;
+	}
+
+	public void setNgaySx(LocalDate ngaySx) {
+		this.ngaySx = ngaySx;
+	}
+
+	public LocalDate getNgayHH() {
+		return ngayHH;
+	}
+
+	public void setNgayHH(LocalDate ngayHH) {
+		this.ngayHH = ngayHH;
+	}
+
+	public String getGhiChu() {
+		return ghiChu;
+	}
+
+	public boolean hetHan() {
+		return ngayHH.isBefore(LocalDate.now()) ? true : false;
+	}
+
+	public void setGhiChu(String ghiChu) {
+		
+		this.ghiChu = ghiChu;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		DecimalFormat df = new DecimalFormat("#,##0.00");
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyy");
+		String sx = ngaySx.format(dtf);
+		String hh = ngayHH.format(dtf);
+		return String.format("%-5s %-10s %-15f %10s %10s %10s",maHang, tenHang, donGia, sx, hh, ghiChu );
+	}
+}

@@ -1,0 +1,34 @@
+package week2_bai2;
+
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		
+		SinhVien sv1 = new SinhVien(1111," Nguyen thanh an", 6.5f, 8.5f);
+		SinhVien sv2 = new SinhVien(2222,"Nguyen thi bong", 7.5f, 8.0f);
+		
+		SinhVien sv3 = GetSinhVien();
+		System.out.println(sv1);
+		
+		
+	}
+	
+	public static SinhVien GetSinhVien() {
+		SinhVien sv = new SinhVien();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap ma so cua sinh vien 3:");
+		int masv = sc.nextInt();
+		sc.nextLine();
+		System.out.println("Nhap vao ho ten cua sinh vien 3: ");
+		String hoten = sc.nextLine();
+		System.out.println("Nhap vao diem ly thuyet cua sv3: ");
+		float diemlt = sc.nextFloat();
+		System.out.println("Nhap vao diem thuc hanh cua sv3: ");
+		float diemth = sc.nextFloat();
+		return sv;
+		
+	}
+}

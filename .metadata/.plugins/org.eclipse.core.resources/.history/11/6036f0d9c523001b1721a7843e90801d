@@ -1,0 +1,57 @@
+package week2_bai2;
+
+public class Sinhvien {
+	private int mssv;
+	private String hoten;
+	private float diemLT, diemTH;
+
+	public Sinhvien(int mssv, String hoten, float diemLT, float diemTH) {
+		super();
+		this.mssv = mssv;
+		this.hoten = hoten;
+		this.diemLT = diemLT;
+		this.diemTH = diemTH;
+	}
+
+	public Sinhvien() {
+
+	}
+
+	public int getMssv() {
+		return mssv;
+	}
+
+	public void setMssv(int mssv) {
+		this.mssv = mssv;
+	}
+
+	public String getHoten() {
+		return hoten;
+	}
+
+	public void setHoten(String hoten) {
+		this.hoten = hoten;
+	}
+
+	public float getDiemLT() {
+		return diemLT;
+	}
+
+	public void setDiemLT(float diemLT) {
+		this.diemLT = diemLT;
+	}
+
+	public float getDiemTH() {
+		return diemTH;
+	}
+
+	public void setDiemTH(float diemTH) {
+		this.diemTH = diemTH;
+	}
+
+	public double diemTB() {
+		double trungbinh = (diemLT + diemTH) / 2;
+		return trungbinh;
+	}
+
+}

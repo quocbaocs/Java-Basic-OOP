@@ -1,0 +1,11 @@
+package week2_bai4;
+
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Vehicle xe1 = new Vehicle("132","12431",2534345,132123);
+		System.out.println(xe1);
+	}
+}

@@ -1,0 +1,71 @@
+package week2_bai4;
+
+public class Vehicle {
+	private String chuXe;
+	private String loaiXe;
+	private int dungtich;
+	private float triGia;
+
+	public Vehicle(String chuXe, String loaiXe, int dungtich, float triGia) {
+		super();
+		this.chuXe = chuXe;
+		this.loaiXe = loaiXe;
+		this.dungtich = dungtich;
+		this.triGia = triGia;
+
+	}
+
+	public Vehicle() {
+		this("","",0,0);
+	}
+
+	public String getChuXe() {
+		return chuXe;
+	}
+
+	public void setChuXe(String chuXe) {
+		this.chuXe = chuXe;
+	}
+
+	public String getLoaiXe() {
+		return loaiXe;
+	}
+
+	public void setLoaiXe(String loaiXe) {
+		this.loaiXe = loaiXe;
+	}
+
+	public int getDungtich() {
+		return dungtich;
+	}
+
+	public void setDungtich(int dungtich) {
+		this.dungtich = dungtich;
+	}
+
+	public double getTriGia() {
+		return triGia;
+	}
+
+	public void setTriGia(float triGia) {
+		this.triGia = triGia;
+	}
+
+	public double tienThue() {
+		float thue = 0;
+		if (dungtich < 100) {
+			thue = triGia / 100;
+		} else if (dungtich >= 100 && dungtich <= 200) {
+			thue = triGia * 3 / 100;
+		} else if (dungtich > 200) {
+			thue = triGia * 5 / 100;
+		}
+		return thue;
+
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return String.format("%-5s %-30s %10f % 20f",chuXe, loaiXe, triGia, dungtich, tienThue());
+	}
+}

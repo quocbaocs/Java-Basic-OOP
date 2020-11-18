@@ -1,0 +1,9 @@
+package week2_bai4;
+
+public class Main {
+	public static void main(String[] args) {
+		Vehicle xe1 = new Vehicle("123", "345",99,1231223);
+		System.out.println(xe1);
+	}
+
+}

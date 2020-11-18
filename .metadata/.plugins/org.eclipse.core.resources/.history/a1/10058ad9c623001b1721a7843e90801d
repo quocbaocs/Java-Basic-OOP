@@ -1,0 +1,11 @@
+package week2_bai2;
+
+public class Main {
+	public static void main(String[] args) {
+		Sinhvien a = new Sinhvien(123,"123123", 5,7);
+		
+		System.out.println(a);
+	}
+	
+
+}

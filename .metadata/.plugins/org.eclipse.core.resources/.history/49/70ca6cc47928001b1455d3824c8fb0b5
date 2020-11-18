@@ -1,0 +1,14 @@
+package week2_bai5;
+
+import java.time.LocalDate;
+
+public class Main {
+	public static void main(String[] args) {
+		
+
+		HangThucPham hang1 = new HangThucPham("001","Gao", 1543534,LocalDate.of(2018,10,7),LocalDate.of(2018,10,7));
+		
+		System.out.println(hang1);
+	}
+
+}

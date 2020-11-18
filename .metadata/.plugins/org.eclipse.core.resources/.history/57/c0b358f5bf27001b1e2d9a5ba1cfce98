@@ -1,0 +1,9 @@
+package week2_bai3;
+
+public class Main {
+	public static void main(String[] args) {
+		HinhTamGiac tg1 = new HinhTamGiac(7,7,-9);
+		System.out.println(tg1);
+	}
+
+}

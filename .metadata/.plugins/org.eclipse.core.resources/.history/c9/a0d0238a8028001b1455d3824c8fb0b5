@@ -1,0 +1,9 @@
+package week2_bai6;
+
+public class Main {
+	public static void main(String[] args) {
+		Account acc1 = new Account("Ted Murphy", 72354, 102.56);
+	System.out.println(acc1);
+	}
+
+}

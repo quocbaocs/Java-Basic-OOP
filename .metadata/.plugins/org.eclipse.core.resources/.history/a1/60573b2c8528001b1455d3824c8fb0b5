@@ -1,0 +1,10 @@
+package week2_bai7;
+
+public class HinhTron {
+	private String ten;
+	private float x;
+	private float y;
+	
+	
+
+}

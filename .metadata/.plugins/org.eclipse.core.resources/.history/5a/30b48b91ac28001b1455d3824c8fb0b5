@@ -1,0 +1,21 @@
+package week2_bai8;
+
+public class CD {
+	private int maCD;
+	private String tuaCD;
+	private int sobaihat;
+	private float giaThanh;
+
+	public CD(int maCD, String tuaCD, int sobaihat, float giaThanh) {
+		super();
+		this.maCD = maCD;
+		this.tuaCD = tuaCD;
+		this.sobaihat = sobaihat;
+		this.giaThanh = giaThanh;
+	}
+
+	public CD() {
+		super();
+	}
+
+}

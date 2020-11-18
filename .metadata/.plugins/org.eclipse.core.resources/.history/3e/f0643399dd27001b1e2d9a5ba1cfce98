@@ -1,0 +1,14 @@
+package week2_bai5;
+
+import java.util.Date;
+
+public class HangThucPham {
+	private int maHang;
+	private String tenHang;
+	private float donGia;
+	private Date ngaySx, ngayHH;
+	private String ghiChu;
+	
+	
+
+}

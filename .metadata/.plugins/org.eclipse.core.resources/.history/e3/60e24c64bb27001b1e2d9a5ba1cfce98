@@ -1,0 +1,9 @@
+package week2_bai3;
+
+public class HinhTamGiac {
+	private float ma, mb, mc;
+	
+	
+	
+
+}

@@ -1,0 +1,11 @@
+package week2_bai4;
+
+public class Vehicle {
+	private String chuxe;
+	private String loaixe;
+	private int dungtich;
+	private float trigia;
+	
+	
+
+}

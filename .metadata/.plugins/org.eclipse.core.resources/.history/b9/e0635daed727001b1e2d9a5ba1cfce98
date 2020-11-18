@@ -1,0 +1,65 @@
+package week2_bai4;
+
+public class Vehicle {
+	private String chuxe;
+	private String loaixe;
+	private int dungtich;
+	private float trigia;
+
+	public Vehicle(String chuxe, String loaixe, int dungtich, float trigia) {
+		super();
+		this.chuxe = chuxe;
+		this.loaixe = loaixe;
+		this.dungtich = dungtich;
+		this.trigia = trigia;
+	}
+
+	public Vehicle() {
+		super();
+	}
+
+	public String getChuxe() {
+		return chuxe;
+	}
+
+	public void setChuxe(String chuxe) {
+		this.chuxe = chuxe;
+	}
+
+	public String getLoaixe() {
+		return loaixe;
+	}
+
+	public void setLoaixe(String loaixe) {
+		this.loaixe = loaixe;
+	}
+
+	public int getDungtich() {
+		return dungtich;
+	}
+
+	public void setDungtich(int dungtich) {
+		this.dungtich = dungtich;
+	}
+
+	public float getTrigia() {
+		return trigia;
+	}
+
+	public void setTrigia(float trigia) {
+		this.trigia = trigia;
+	}
+	
+	public float tienThue() {
+		if(dungtich<100) {
+			return 1;
+		}
+		return 0;
+		
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return String.format("%-10s %-15s %5d %15f % 20f ", chuxe, loaixe, dungtich, trigia);
+	}
+}

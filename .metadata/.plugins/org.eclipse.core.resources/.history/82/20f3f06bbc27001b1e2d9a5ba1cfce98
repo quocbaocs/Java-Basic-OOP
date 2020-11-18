@@ -1,0 +1,18 @@
+package week2_bai3;
+
+public class HinhTamGiac {
+	private float ma, mb, mc;
+
+	public HinhTamGiac(float ma, float mb, float mc) {
+		super();
+		this.ma = ma;
+		this.mb = mb;
+		this.mc = mc;
+	}
+	
+	public HinhTamGiac() {
+		this(0,0,0);
+	}
+	
+
+}

@@ -1,0 +1,70 @@
+package week2_bai4;
+
+public class Vehicle {
+	private String chuXe;
+	private String loaiXe;
+	private int dungtich;
+	private double triGia;
+	
+
+	
+	public Vehicle(String chuXe, String loaiXe, int dungtich, double triGia) {
+		super();
+		this.chuXe = chuXe;
+		this.loaiXe = loaiXe;
+		this.dungtich = dungtich;
+		this.triGia = triGia;
+		
+	}
+	
+	public Vehicle() {
+		
+	}
+
+	public String getChuXe() {
+		return chuXe;
+	}
+
+	public void setChuXe(String chuXe) {
+		this.chuXe = chuXe;
+	}
+
+	public String getLoaiXe() {
+		return loaiXe;
+	}
+
+	public void setLoaiXe(String loaiXe) {
+		this.loaiXe = loaiXe;
+	}
+
+	public int getDungtich() {
+		return dungtich;
+	}
+
+	public void setDungtich(int dungtich) {
+		this.dungtich = (dungtich>0)?dungtich:0;
+	}
+
+	public double getTriGia() {
+		return triGia;
+	}
+
+	public void setTriGia(double triGia) {
+		this.triGia = (triGia>0)?triGia:0;
+	}
+
+	public double tienThue() {
+		double thue=0;
+		if(dungtich<100) {
+			thue = triGia/100;
+		}
+		else if(dungtich>=100&&dungtich<=200) {
+			thue = triGia*3/100;
+		}else if(dungtich>200) {
+			thue = triGia*5/100;
+		}
+		return thue;
+		
+	}
+
+}

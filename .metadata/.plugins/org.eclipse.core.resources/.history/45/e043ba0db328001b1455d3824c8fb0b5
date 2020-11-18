@@ -1,0 +1,6 @@
+package week2_bai8;
+
+public class DSCD {
+	CD listCD[] = new CD[100];
+
+}
