@@ -1,0 +1,31 @@
+package abstractclass;
+
+abstract class Shape {
+	abstract void draw();
+}
+
+//In real scenario, implementation is provied by others i.e. unknown  by end user
+class Rectangle extends Shape {
+	@Override
+	void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("drawing rectangle");
+	}
+}
+
+class Circle1 extends Shape {
+	@Override
+	void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("drawing circle");
+	}
+}
+//In real scenario, method is called by programmer or user  
+
+class TestAbstraction1 {
+
+	public static void main(String[] args) {
+		Shape s = new Circle1();
+		s.draw();
+	}
+}
